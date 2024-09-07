@@ -1,6 +1,92 @@
-body{
-    background-color: black;
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
+/* Slide in Right Animation */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Bounce In Animation for Button */
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: #0A1128;
+    color: #FFD700;
+}
+
+
+.nav-link:hover {
+    color: #FFD700 !important;
+}
+
+/* Hover Effects for Button */
+.btn-outline-light:hover {
+    background-color: #FFD700 !important;
+    color: #0A1128 !important;
+}
+
+/* Smooth Transition for all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+
 
 i{
     font-size: larger;
@@ -195,15 +281,71 @@ background-color: rgba(266, 266, 266, 0.2);
 }
 
 .top1{
-
 position: fixed;
 right: 20px;
 bottom: 20px;
 z-index: 1000;
-
 }
 
-a{
-text-decoration: none;
-color: #fff;
-}
+
+    .nav-pills .nav-link {
+        background-color: #003366; /* Deep navy blue for tabs */
+        color: white;
+        border-radius: 20px; /* Rounded tabs */
+        padding: 5px 5px; /* Adjust padding for tab size */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Transition for tabs */
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #004080; /* Slightly lighter navy blue for active tab */
+        color: gold;
+    }
+
+    .nav-pills .nav-link:hover {
+        background-color: #00509e; /* Hover color for tabs */
+        color: gold;
+    }
+
+    .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #ddd; /* Border color */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for card effects */
+    }
+
+    .card:hover {
+        transform: translateY(-10px); /* Lift effect on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    .card-img-top {
+        border-radius: 10px 10px 0 0; /* Rounded corners for image */
+    }
+
+    .card-body {
+        background-color: #003366; /* Deep navy blue background for card body */
+        color: white; /* White text color for card body */
+        border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+    }
+
+    .card-body p {
+        font-size: 1.1rem; /* Adjust font size for better readability */
+        transition: color 0.3s ease; /* Transition for text color */
+    }
+
+    .card-body p:hover {
+        color: gold; /* Hover color for text */
+    }
+
+    .section-title {
+        font-family: 'Agbalumo', serif;
+        font-weight: bold;
+        color: gold; /* Gold color for section title */
+    }
+
+    @media (max-width: 768px) {
+        .nav-pills .nav-link {
+            font-size: 0.8rem; /* Adjust font size on smaller screens */
+        }
+    }

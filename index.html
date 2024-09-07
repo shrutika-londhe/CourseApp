@@ -24,111 +24,157 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+    <link rel="shortcut icon" href="img/iconcourse.ico">
   </head>
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top bg-secondary">
-    <div class="container">
-      <i class="fa-solid fa-laptop-code fs-2"></i>
-      <a class="navbar-brand playwrite-cu-font fw-bold fs-3" href="#" style="color: cyan;">TechPrep</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#explorecourses">Explore courses</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#clientstories">Client Stories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#register">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#aboutus">About us</a>
-          </li>
-        </ul>       
-          <a href="#registration-form"><button class="btn btn-success text-dark" style="background-color: cyan;"
-          >Sign up</button>
-        </a>
-        
-      </div>
-    </div>
-  </nav>
+  <style>
+    @keyframes fadeInUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
   
+    /* Image Hover Effect */
+    .img-hover {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .img-hover:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Button Hover Effect */
+    .btn:hover {
+        background-color: #0A1128;
+        color: #FFD700;
+    }
+  </style>
+<body>
+<!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #0A1128; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <div class="container">
+        <i class="fa-solid fa-laptop-code fs-2" style="color: #FFD700; margin-right: 10px;"></i>
+        <a class="navbar-brand fw-bold fs-3" href="#" style="color: #FFD700; font-family:cursive; letter-spacing: 2px;">TechPrep</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html" style="color: white; font-family: 'Poppins', sans-serif; transition: color 0.3s;">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#explorecourses" style="color: white; font-family: 'Poppins', sans-serif; transition: color 0.3s;">Explore Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#clientstories" style="color: white; font-family: 'Poppins', sans-serif; transition: color 0.3s;">Client Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#register" style="color: white; font-family: 'Poppins', sans-serif; transition: color 0.3s;">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus" style="color: white; font-family: 'Poppins', sans-serif; transition: color 0.3s;">About Us</a>
+                </li>
+            </ul>
+            <a href="#registration-form">
+                <button class="btn btn-outline-light" style="color: #FFD700; border-color: #FFD700; font-family: 'Poppins', sans-serif; transition: background-color 0.3s, color 0.3s;">Sign Up</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar end -->
 
-
-  <div class="container-fluid">
-    <div class="container pt-5 mt-5 ">
+<!-- hero section start -->
+<div class="container-fluid" style="background: #F9F9F9; color: #0A1128; overflow: hidden; position: relative;">
+  <div class="container pt-5 mt-5">
       <div class="row">
-      <div class="col-lg-7">
-        <p class="text-uppercase text-white" style="font-family: Playfair Display, serif; font-size: 80px;">Learn from the best, be your best.</p>
-        <p class="text-light fs-5">Get unlimited access to thousands of bite-sized lessons.</p>
-    </div>
-
-
-   
-
-    <!-- Courses -->
-      <div class="col-lg-5 pe-0 me-0">
-      <div class="two-column-carousel1">
-       <div class="carousel-column1">
-        <div class="carousel1">
-            <div class="carousel-item1 py-2"><img src="img/1.jpg" alt="Image 1"></div>
-            <div class="carousel-item1 py-2"><img src="img/2.jpg" alt="Image 2"></div>
-            <div class="carousel-item1 py-2"><img src="img/3.jpg" alt="Image 3"></div>
-            <div class="carousel-item1 py-2"><img src="img/1.jpg" alt="Image 1"></div>
-            <div class="carousel-item1 py-2"><img src="img/2.jpg" alt="Image 2"></div>
-            <div class="carousel-item1 py-2"><img src="img/3.jpg" alt="Image 3"></div>
-        </div>
-        </div>
-       <div class="carousel-column1">
-        <div class="carousel1">
-            <div class="carousel-item1 py-2"><img src="img/4.jpg" alt="Image 4"></div>
-            <div class="carousel-item1 py-2"><img src="img/5.jpg" alt="Image 5"></div>
-            <div class="carousel-item1 py-2"><img src="img/6.jpg" alt="Image 6"></div>
-            <div class="carousel-item1 py-2"><img src="img/4.jpg" alt="Image 4"></div>
-            <div class="carousel-item1 py-2"><img src="img/5.jpg" alt="Image 5"></div>
-            <div class="carousel-item1 py-2"><img src="img/6.jpg" alt="Image 6"></div>
-        </div>
-    </div>
+          <div class="col-lg-7">
+            
+              <p class="text-uppercase" style="font-family: 'Merriweather', serif; font-size: 50px; color: #0A1128; animation: slideInLeft 1s ease-out;">
+                  Learn from the best, <span style="color: #e10000;">be your best.</span>
+              </p>
+              
+              <p class="text-dark fs-4" style="animation: slideInRight 1.5s ease-out;">
+                  Get unlimited access to thousands of bite-sized lessons tailored for your growth.
+              </p>
+        
+              <p class="text-dark fs-6 mt-3" style="animation: slideInRight 2s ease-out;">
+                  Our expert-led courses cover a wide range of topics to help you excel in your field. Whether you're looking to enhance your skills or dive into a new area, we have the resources you need.
+              </p>
+              <p class="text-dark fs-6" style="animation: slideInRight 2.5s ease-out;">
+                  Join our community of learners today and start your journey towards success with personalized learning paths and interactive content.
+              </p>
+             
+              <a href="#explorecourses" class="btn btn-warning mt-lg-2" style="font-family: 'Poppins', sans-serif; padding: 12px 30px; font-size: 16px; background-color: #FFD700; color: #0A1128; border: none; animation: bounceIn 2.5s ease-out;">
+                Start Learning Now
+            </a>
+          </div>
+           
+           <div class="col-lg-5 pe-0 me-0">
+             <div class="two-column-carousel1">
+               <div class="carousel-column1">
+                  <div class="carousel1">
+                     <div class="carousel-item1 py-2"><img src="img/1.jpg" alt="Image 1"></div>
+                    <div class="carousel-item1 py-2"><img src="img/2.jpg" alt="Image 2"></div>
+              <div class="carousel-item1 py-2"><img src="img/3.jpg" alt="Image 3"></div>
+              <div class="carousel-item1 py-2"><img src="img/1.jpg" alt="Image 1"></div>
+              <div class="carousel-item1 py-2"><img src="img/2.jpg" alt="Image 2"></div>
+              <div class="carousel-item1 py-2"><img src="img/3.jpg" alt="Image 3"></div>
+            </div>
+          </div>
+         <div class="carousel-column1">
+           <div class="carousel1">
+              <div class="carousel-item1 py-2"><img src="img/4.jpg" alt="Image 4"></div>
+              <div class="carousel-item1 py-2"><img src="img/5.jpg" alt="Image 5"></div>
+              <div class="carousel-item1 py-2"><img src="img/6.jpg" alt="Image 6"></div>
+              <div class="carousel-item1 py-2"><img src="img/4.jpg" alt="Image 4"></div>
+              <div class="carousel-item1 py-2"><img src="img/5.jpg" alt="Image 5"></div>
+              <div class="carousel-item1 py-2"><img src="img/6.jpg" alt="Image 6"></div>
+            </div>
+          </div>
+      </div>
+     </div>
+  </div>
 </div>
 </div>
-</div>
+<!-- hero section end -->
+ 
 
 
-<div class="py-5">
+<!-- About Us Section start-->
+<div class="py-5" style="background-color: #F0F4F8;">
   <div class="container" id="aboutus">
       <div class="row g-5 align-items-center">
           <div class="col-lg-6">
               <div class="row g-3">
                   <div class="col-6 text-start">
-                      <img  class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about1.jpg">
+                      <img class="img-fluid rounded w-100 wow fadeInUp img-hover" data-wow-delay="0.1s" src="img/about1.jpg">
                   </div>
                   <div class="col-6 text-start">
-                      <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about2.jpg" style="margin-top: 25%;">
+                      <img class="img-fluid rounded w-75 wow fadeInUp img-hover" data-wow-delay="0.3s" src="img/about2.jpg" style="margin-top: 25%;">
                   </div>
                   <div class="col-6 text-end">
-                      <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about3.jpg">
+                      <img class="img-fluid rounded w-75 wow fadeInUp img-hover" data-wow-delay="0.5s" src="img/about3.jpg">
                   </div>
                   <div class="col-6 text-end">
-                      <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about4.jpg">
+                      <img class="img-fluid rounded w-100 wow fadeInUp img-hover" data-wow-delay="0.7s" src="img/about4.jpg">
                   </div>
               </div>
           </div>
           <div class="col-lg-6">
-              <h5 class="section-title text-start fw-bold fs-1" style="color:cyan;"><u>About us</u></h5>
-              <h1 class="mb-4 text-white" style="font-family: Agbalumo;color: black;">Welcome to <i class="fa-solid fa-laptop-code fs-2"></i>TechPrep</h1>
-              <p class="mb-4 text-white">Welcome to [Your Application Name], your gateway to a world of knowledge and skill-building. We are passionate about empowering learners of all levels by providing access to high-quality courses in a wide range of subjects, from programming and data science to business and the arts. </p>
-              <p class="mb-4 text-white">Our mission is to bridge the gap between education and real-world application. Whether you’re a student looking to enhance your academic knowledge, a professional aiming to upskill, or simply someone eager to explore new interests, we have something for you. </p>
+              <h5 class="section-title text-start fw-bold fs-1" style="color: #0A1128; font-family: 'Roboto', sans-serif;">About Us</h5>
+              <h1 class="mb-4 text-dark" style="font-family: 'Merriweather', serif; color: #0A1128;">Welcome to <i class="fa-solid fa-laptop-code fs-2" style="color: #FFD700;"></i> TechPrep</h1>
+              <p class="mb-4 text-dark">Welcome to TechPrep, your gateway to a world of knowledge and skill-building. We are passionate about empowering learners of all levels by providing access to high-quality courses in a wide range of subjects, from programming and data science to business and the arts.</p>
+              <p class="mb-4 text-dark">Our mission is to bridge the gap between education and real-world application. Whether you’re a student looking to enhance your academic knowledge, a professional aiming to upskill, or simply someone eager to explore new interests, we have something for you.</p>
               <div class="row g-4 mb-4">
                   <div class="col-sm-6">
-                      <div class="d-flex align-items-center border-start border-5 px-3" style="color: rgb(255, 255, 255);">
-                          <h1 class="flex-shrink-0 display-5 mb-0" data-toggle="counter-up" style="color: cyan">15</h1>
+                      <div class="d-flex align-items-center border-start border-5 border-dark px-3" style="color: #0A1128;">
+                          <h1 class="flex-shrink-0 display-5 mb-0" data-toggle="counter-up" style="color: #FFD700;">15</h1>
                           <div class="ps-4">
                               <p class="mb-0">Years of</p>
                               <h6 class="text-uppercase mb-0">Experience</h6>
@@ -136,8 +182,8 @@
                       </div>
                   </div>
                   <div class="col-sm-6">
-                      <div class="d-flex align-items-center border-start border-5px-3" style="color: rgb(255, 255, 255);">
-                          <h1 class="flex-shrink-0 display-5  mb-0" data-toggle="counter-up" style="color: cyan;">50</h1>
+                      <div class="d-flex align-items-center border-start border-5 border-dark px-3" style="color: #0A1128;">
+                          <h1 class="flex-shrink-0 display-5 mb-0" data-toggle="counter-up" style="color: #FFD700;">50</h1>
                           <div class="ps-4">
                               <p class="mb-0">Popular</p>
                               <h6 class="text-uppercase mb-0">Master Courses</h6>
@@ -145,213 +191,224 @@
                       </div>
                   </div>
               </div>
-              <a href="#contact"  class="btn my-3 py-2 px-2 fs-5" style="background-color: cyan;">Register</a>
+              <a href="#register" class="btn btn-warning mt-lg-2" style="font-family: 'Poppins', sans-serif; padding: 12px 30px; font-size: 16px; background-color: #FFD700; color: #0A1128; border: none; animation: bounceIn 2.5s ease-out;">
+                Register
+            </a>
           </div>
       </div>
   </div>
 </div>
 
+<!-- About us section end -->
 
-<!-- Courses Start -->
+
+
+<!-- Explore Courses Section -->
 <div class="my-4" id="menu">
   <div class="container py-4">
-      <h5 class="section-title ff-secondary text-center fw-normal fw-bold fs-1" style="color: cyan;" id="explorecourses">
-        <u>Explore Courses</u>
-      </h5>
-      <h1 class="mb-4 fs-3 text-center" style="font-family: agbalumo; color: white;">A dose of inspiration, whenever you need it.</h1>
-    </div>
+    <h5 class="section-title text-center fw-bold fs-1" style="color: #0A1128; font-family: 'Roboto', sans-serif;">Explore Courses</h5>
+      <h1 class="mb-4 fs-3 text-center" style="font-family: 'Agbalumo', serif; color: #0A1128;">A dose of inspiration, whenever you need it.</h1>
+  </div>
+  <div class="container">
 
-    <div class="tab-class wow fadeInUp" data-wow-delay="0.1s">
-  
-      <ul class="nav nav-pills mb-4 d-flex justify-content-between">
+<div class="row">
+  <div class="tab-class wow fadeInUp" data-wow-delay="0.1s">
+    <ul class="nav nav-pills mb-4 d-flex justify-content-between" style="background-color: deepblue;">
+      <div class="col-lg-3 g-2">
         <li class="nav-item flex-fill">
-          <a class="nav-link active text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-1">
-            <img src="img/web-development.gif" width="50px" height="50px" class="rounded-circle me-2" />
-            <span class="flex-grow-1 text-center">Full-Stack Dev</span>
-          </a>
+            <a class="nav-link active text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-1">
+                <img src="img/web-development.gif" width="50px" height="50px" class="rounded-circle me-2" />
+                <span class="flex-grow-1 text-center">Full-Stack Dev</span>
+            </a>
         </li>
+      </div>
+      <div class="col-lg-3">
         <li class="nav-item flex-fill">
-          <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-2">
-            <img src="img/data-science.gif" width="50px" height="50px" class="rounded-circle me-2" />
-            <span class="flex-grow-1 text-center">Data Science </span>
-          </a>
+            <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-2">
+                <img src="img/data-science.gif" width="50px" height="50px" class="rounded-circle me-2" />
+                <span class="flex-grow-1 text-center">Data Science</span>
+            </a>
         </li>
+      </div>
+      <div class="col-lg-3">
         <li class="nav-item flex-fill">
-          <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-3">
-            <img src="img/cybersecurity.jfif" width="50px" height="50px" class="rounded-circle me-2" />
-            <span class="flex-grow-1 text-center">Cybersecurity</span>
-          </a>
+            <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-3">
+                <img src="img/cybersecurity.jfif" width="50px" height="50px" class="rounded-circle me-2" />
+                <span class="flex-grow-1 text-center">Cybersecurity</span>
+            </a>
         </li>
+        </div>
+        <div class="col-lg-3">
         <li class="nav-item flex-fill">
-          <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-4">
-            <img src="img/mobile-development2-2.gif" width="50px" height="50px" class="rounded-circle me-2" />
-            <span class="flex-grow-1 text-center">Mobile App Dev</span>
-          </a>
+            <a class="nav-link text-white d-flex align-items-center justify-content-center" data-bs-toggle="pill" href="#tab-4">
+                <img src="img/mobile-development2-2.gif" width="50px" height="50px" class="rounded-circle me-2" />
+                <span class="flex-grow-1 text-center">Mobile App Dev</span>
+            </a>
         </li>
+        </div>
       </ul>
-      
+</div>
+</div>
 
       <div class="tab-content">
-        <div id="tab-1" class="tab-pane fade show active">
-          <div class="container">
-            <div class="row py-4">
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">HTML</p>
+          <div id="tab-1" class="tab-pane fade show active">
+              <div class="container">
+                  <div class="row py-4"> 
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">HTML</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">CSS</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">JavaScript</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">Bootstrap</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">CSS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">JavaScript</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">Bootstrap</p>
-                  </div>
-                </div>
-              </div>
-          
-            </div>
           </div>
-        </div>
-        <div id="tab-2" class="tab-pane fade">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">CSS</p>
+          <div id="tab-2" class="tab-pane fade">
+              <div class="container">
+                  <div class="row"> 
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">CSS</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">CSS</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">CSS</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/2.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">CSS</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">CSS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">CSS</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/2.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">CSS</p>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
           </div>
-        </div>
-        <div id="tab-3" class="tab-pane fade">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">JavaScript</p>
+          <div id="tab-3" class="tab-pane fade">
+              <div class="container">
+                  <div class="row gx-4"> 
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">JavaScript</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">JavaScript</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">JavaScript</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/3.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">JavaScript</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">JavaScript</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">JavaScript</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/3.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">JavaScript</p>
-                  </div>
-                </div>
-              </div>
-             
-            </div>
           </div>
-        </div>
-        <div id="tab-4" class="tab-pane fade">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">Python</p>
+          <div id="tab-4" class="tab-pane fade">
+              <div class="container">
+                  <div class="row gx-4"> 
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">Python</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">Python</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">Python</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 item2">
+                          <div class="card">
+                              <img src="img/4.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <p class="text-center">Python</p>
+                              </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
               </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">Python</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">Python</p>
-                  </div>
-                </div>
-              </div>
-               <div class="col-lg-3 item2">
-                <div class="card" style="width: 15rem;">
-                  <img src="img/4.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <p class="text-center">Python</p>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
           </div>
-        </div>
       </div>
-    </div>
   </div>
-    </div>
+</div>
+
+<!-- Explore Courses Section -->
+
 
 <div class="my-4" id="menu">
   <div class="container py-4">
